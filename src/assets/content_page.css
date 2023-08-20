@@ -1,0 +1,10 @@
+div.content_page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+div.content_page>h1,h2,h3,h4,h5{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
