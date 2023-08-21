@@ -99,9 +99,11 @@ div.contact{
     display: flex;
     flex-direction: column;
     align-items: left;
-    height: inherit;
-    width: 30%;
+    height: fit-content;
+    flex-grow: 1;
+    /* width: 30%; */
     padding-left: 50px;
+    padding-right: 20px;
     border-left: dashed 2px;
     border-color: rgb(221, 3, 3);
 

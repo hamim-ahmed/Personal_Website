@@ -151,7 +151,7 @@
     font-size: 100px;
     font-weight: bold;
     position: sticky;
-    left: 17%;          /* 17% left side is occupied by nav bar*/
+    /* left: 17%;           */
     top: 50%;
     margin-top: 30px;
     margin-bottom: 50px;

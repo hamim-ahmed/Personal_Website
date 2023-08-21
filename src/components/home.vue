@@ -111,7 +111,7 @@ div.content_page{
   #animation1{
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 80px;
+    font-size: 50px;
     font-style: italic;
     font-family:  Serif;
     font: italic;
