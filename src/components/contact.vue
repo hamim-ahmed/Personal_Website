@@ -28,7 +28,7 @@
                             <textarea id="msg" class="txt" required></textarea>
                         </div>
                         <div>
-                            <button class="ui inverted red button" type="submit">submit</button>
+                            <button class="ui inverted green button" type="submit">submit</button>
                         </div>
                     </div>
                 </form>
@@ -131,7 +131,7 @@ div.personal_info{
     justify-content: center;
 }
 div.personal_info>input{
-    width: 13vw;
+    width: 200px;
     height: 30px;
     margin: 10px;
     margin-left: 0px;
@@ -151,7 +151,7 @@ div.msg_box{
     font-family: cursive;
 }
 div.msg_box>input{
-    width: 20vw;
+    width: 300px;
     height: 35px;
     margin: 10px;
     margin-top: 2px;
@@ -161,7 +161,7 @@ div.msg_box>input{
 }
 
 div.msg_box>textarea{
-    width: 30vw;
+    width: 500px;
     height: 90px;
     margin: 10px;
     margin-top: 2px;
