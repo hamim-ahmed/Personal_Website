@@ -1,13 +1,23 @@
 <template>
+        <div class="bg_img">   
+            <img src="../assets/web_dp.jpg">
+        </div>
         <div id="content_home" class="content_page">
+            
             <h2 id="hi">Hi There!</h2>
             <h1>{{ greet }}</h1>
             <h1 id="animation1"></h1>
             <h2>From Narayanganj,Bangladesh.</h2><br><br><br><br>
             <button v-on:click="scrollTo('content_contact')" class="big ui inverted teal button">ReachMe</button>
             <!-- <br> -->
-            <div id="downarrow" style="display: block;"><span><i class="big angle double down icon"></i></span></div>
+            <div class="animation2">
+                <div id="downarrow" style="display: block;">
+                <span><i class="big angle double down icon"></i></span>
+            </div>
+            </div>
+            
         </div>
+        
     
     
     
@@ -92,17 +102,50 @@ export default{
 </script>
 
 <style scoped>
-@import '../assets/content_page.css';
+/* @import '../assets/content_page.css'; */
 div.content_page{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* position: relative; */
+    /* flex-grow: 1;    */
     height: 100vh;
     width: 100%;
+    
     background-color: rgb(0, 0, 0);
-    background-size: 100% 100%;
-    opacity: 0.65;
+    /* background-size: 100% 100%; */
+    opacity: 0.7;
   
   }
+  div.bg_img{
+    
+    position: fixed; 
+    /* background-attachment: fixed; */
+    top: 0;
+    /* left: 0; */
+    /* bottom: 0; */
+    /* left: 17.5%; */
+    width:100%;
+    height: 100vh;
+    /* left: 17%; */
+    /* width: 100%; */
+    /* object-fit: cover; */
+    /* background: url('../assets/web_dp.jpg') no-repeat center center fixed;  */
+    /* background-size: 100% 100%;  */
+    /* margin-left: 0px; */
+    /* padding-left: 0px; */
+    /* object-fit: fill; */
+    z-index: -1;       
+    
+}
+.bg_img>img{
+    /* left: 17%; */
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+
+}
 
   div.content_page>h1,h2{
     font-family: cursive;
@@ -122,9 +165,10 @@ div.content_page{
   div.content_page>button{
     border-radius: 100%;
   }
-  #downarrow{
-    position: fixed;
+  div.animation2{
+    /* position: fixed; */
     top: 75%;
+    height: 30px;
   }
     
 </style>

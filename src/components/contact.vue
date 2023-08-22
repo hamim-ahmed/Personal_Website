@@ -8,31 +8,40 @@
             <h2>Contact Me</h2>
         </div>
         <div class="info">
-            <div>
-                <form>
+            
+                <form class="contact_form">
                     
                     <div class="msg">
                         <h3>Leave A Message</h3>
                         <div class="personal_info">
-                            <label for="name">Name:</label>
-                            <input id='name' class="input" type="text" required>
-                            <label for="mail">Email:</label>
-                            <input id="mail" type="email"  class="input" required>
-                            <label for="phone" >Phone:</label>
-                            <input id="phone" type="number" class="phn" required>
+                            <div>
+                                <label for="name">Name:</label>
+                                <input id='name' class="input" type="text" required>
+                            </div>
+                            <div>
+                                <label for="mail">Email:</label>
+                                <input id="mail" type="email"  class="input" required>
+                            </div>
+                            <div>
+                                <label for="phone" >Phone:</label>
+                                <input id="phone" type="number" class="phn" required>
+                            </div>
+                            
+                            
+                            
                         </div>
                         <div class="msg_box">
                             <label for="sub">Subject:</label>
                             <input id="sub" type="text" class="subject" required>
-                            <label for="msg">Write Your Message:</label>
-                            <textarea id="msg" class="txt" required></textarea>
+                            <label for="msge">Write Your Message:</label>
+                            <textarea id="msge" class="txt" required></textarea>
                         </div>
                         <div>
                             <button class="ui inverted green button" type="submit">submit</button>
                         </div>
                     </div>
                 </form>
-            </div>
+            
 
 
         </div>
@@ -59,7 +68,7 @@
 
 div.content_page{
     
-    background-color: rgb(203, 255, 246);
+    background-color: rgb(184, 184, 184);
     opacity: 0.999;
     color: rgb(0, 0, 0);
     display: flex;
@@ -107,12 +116,14 @@ div.msg{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
     /* justify-content: center; */
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    width: 600px;
     /* opacity: 0.8; */
     /* width: 70%; */
     
@@ -121,7 +132,7 @@ div.msg{
 div.msg>h3{
     background-color: rgb(255, 102, 0);
     padding: 5px;
-    font-family: open sa;
+    font-family: serif;
     border-radius: 5px;
 }
 div.personal_info{
@@ -129,17 +140,19 @@ div.personal_info{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
-div.personal_info>input{
-    width: 200px;
+div.personal_info> div>input{
+    width: 160px;
     height: 30px;
     margin: 10px;
+    margin-top: 0px;
     margin-left: 0px;
     background-color: rgb(243, 243, 243);
     border: solid 1px rgb(163, 163, 163);
     border-radius: 5px;
 }
-div.personal_info>label{
+div.personal_info>div>label{
     text-align: center;
     font-weight: bolder;
 }
@@ -148,7 +161,8 @@ div.msg_box{
     flex-direction: column;
     align-items: center;
     font-weight: bolder;
-    font-family: cursive;
+    /* font-family: cursive; */
+    /* font-size: 50px; */
 }
 div.msg_box>input{
     width: 300px;
@@ -169,11 +183,16 @@ div.msg_box>textarea{
     border: solid 1px rgb(153, 153, 153);
     border-radius: 10px;
 }
+div.msg_box>label{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
 div.footer{
     background-color: black;
     left: 17%;
     /* bottom: 0; */
-    height: 13vw;
+    height: 160px;
     width: 100%;
     display: flex;
     flex-direction: row;

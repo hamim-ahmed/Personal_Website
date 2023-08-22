@@ -40,22 +40,24 @@
 
 <style scoped>
 @import '../assets/content_page.css';
-#content_about{
+
+div.content_page{
+    height: fit-content;
     background-color: rgb(245, 245, 245);
     opacity: 0.999;
-    
-  }
-div.contenst_page{
-    
+    padding-bottom: 50px;
     
 }
 div.bg{
+    /* display: flex; */
     color: rgb(148, 148, 148);
     text-align: center;
     font-size: 100px;
     font-weight: bold;
     position: sticky;
-    left: 17%;          /* 17% left side is occupied by nav bar*/
+    /* width: 100%; */
+    /* flex-grow: 1; */
+    left: 17%;         /* 17% left side is occupied by nav bar */
     top: 50%;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -91,15 +93,15 @@ div.about{
     align-items: left;
     padding-right: 50px;
     margin-left: 20px;
-    height: inherit;
-    width: 70%;
+    /* height: inherit; */
+    /* width: 70%; */
     color: black;
 }
 div.contact{
     display: flex;
     flex-direction: column;
     align-items: left;
-    height: fit-content;
+    /* height: fit-content; */
     flex-grow: 1;
     /* width: 30%; */
     padding-left: 50px;

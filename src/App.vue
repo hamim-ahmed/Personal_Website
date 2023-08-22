@@ -9,19 +9,12 @@
         
         <img class="dp" src="./assets/hamim.svg" alt="my_profile">
         <h2 class="dp_caption">Hamim Ahmed<br> <span>Software Engineer<br><br></span></h2>
-        <!-- <div class="nav">
-          <h3><i class="home icon"></i><RouterLink to="/"> Home</RouterLink></h3>
-          <h3><i class="info circle icon"></i><RouterLink to="/about"> About</RouterLink></h3>
-          <h3><i class="briefcase icon"></i><RouterLink to="/resume"> Resume</RouterLink></h3>
-          <h3><i class="clipboard list icon"></i><RouterLink to="/mywork"> Portfolio</RouterLink></h3>
-          <h3><i class="address book outline icon"></i><RouterLink to="/contact"> Contact Me</RouterLink></h3>
-        </div> -->
+        
         <div class="nav">
           <h3><i class="home icon"></i><a v-on:click="scrollTo('content_home')"> home</a></h3>
           <h3><i class="info circle icon"></i><a v-on:click="scrollTo('content_about')"> About</a></h3>
           <h3><i class="briefcase icon"></i><a v-on:click="scrollTo('content_resume')"> Resume</a></h3>
           <h3><i class="cogs icon"></i><a v-on:click="scrollTo('content_skills')">  My Skills</a></h3>
-          <!-- <h3><i class="clipboard list icon"></i><a v-on:click="scrollTo('content_mywork')"> Portfolio</a></h3> -->
           <h3><i class="address book outline icon"></i><a v-on:click="scrollTo('content_contact')"> Contact me</a></h3>
         </div>
         <br><br><br>
@@ -37,8 +30,8 @@
 
       
       <div class="content">
-          <div class="bg">
-          </div>
+          <!-- <div class="bg">
+          </div> -->
           <home/>
           <about/>
           <resume/>

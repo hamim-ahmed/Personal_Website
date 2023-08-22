@@ -1,10 +1,8 @@
 div.main{
   display: flex;
   flex-direction: row;
-  width: 100%;
+  /* width: 100%; */
   
-  
-
 }
 div.nav-bar{
   display: flex;
@@ -13,7 +11,7 @@ div.nav-bar{
   /* align-content: space-around; */
   /* justify-content: center; */
   height: 100vh;
-  width: 560px;
+  width: 650px;
   position: sticky;
   top: 0px;    /*  sticky form the very beginning height */
   background-color: rgb(18, 80, 72);
@@ -25,6 +23,25 @@ div.nav{
   align-items: center;
   padding-left: 20px;
 }
+
+
+/* @media (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column; 
+    
+  }
+  .nav-bar{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav{
+    display: flex;
+    flex-direction: row;
+  }
+} */
+
+
 .nav>h3{
   height: 20px;
   width: 150px;
@@ -45,26 +62,22 @@ div.content{
   display: flex;
   flex-grow: 1;    /* taking rest of the body part for content */
   flex-direction: column;
-  align-items: center;
-  align-content: space-around;
-  justify-content: center;
-  /* height: 100vh;
-  width: 100%; */
+  
   
 }
-div.bg{
-  /* flex-grow: 1; */
+/* div.bg{
+  
   height: 100vh;
-  /* width: 100% auto; */
+  width: 100% auto;
   background-image: url(./web_dp.jpg);
   
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: fixed;
   right: 0px;
-  left: 15%;   
+  left: 22%;   
   top:0px;
-}
+} */
 
 .dp{
   /* padding: 20px; */

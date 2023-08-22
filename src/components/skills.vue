@@ -54,7 +54,7 @@
 <style scoped>
 @import '../assets/content_page.css';
 div.content_page{
-    background-color: white;
+    background-color: rgb(241, 241, 241);
     opacity: 0.999;
     color: rgb(0, 0, 0);
     display: flex;
@@ -126,7 +126,7 @@ div.skill_title{
     border-bottom: dashed 2px rgb(146, 146, 146);
 }
 div.list>.s_name{
-    font-size: 1.4vw;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 7px;
 }
