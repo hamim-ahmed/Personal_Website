@@ -1,19 +1,19 @@
 <template>
         <div class="bg_img">   
-            <img src="../assets/web_dp.jpg">
+            <img src="../assets/web_dp3.jpg">
         </div>
         <div id="content_home" class="content_page">
             
-            <h2 id="hi">Hi There!</h2>
-            <h1>{{ greet }}</h1>
-            <h1 id="animation1"></h1>
-            <h2>From Narayanganj,Bangladesh.</h2><br><br><br><br>
-            <button v-on:click="scrollTo('content_contact')" class="big ui inverted teal button">ReachMe</button>
+            <div>Hi There!</div>
+            <div>{{ greet }}</div>
+            <div><h1 id="animation1"></h1></div>
+            <div>From Narayanganj,Bangladesh.<br><br><br><br></div>
+            <div><button v-on:click="scrollTo('content_contact')" class="big ui blue button">ReachMe</button></div>
             <!-- <br> -->
             <div class="animation2">
                 <div id="downarrow" style="display: block;">
                 <span><i class="big angle double down icon"></i></span>
-            </div>
+                </div>
             </div>
             
         </div>
@@ -108,48 +108,37 @@ div.content_page{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
-    /* flex-grow: 1;    */
     height: 100vh;
     width: 100%;
-    
-    background-color: rgb(0, 0, 0);
-    /* background-size: 100% 100%; */
+    background-color: rgb(125, 136, 160);
     opacity: 0.7;
   
   }
   div.bg_img{
-    
     position: fixed; 
-    /* background-attachment: fixed; */
-    top: 0;
-    /* left: 0; */
-    /* bottom: 0; */
-    /* left: 17.5%; */
     width:100%;
     height: 100vh;
-    /* left: 17%; */
-    /* width: 100%; */
-    /* object-fit: cover; */
-    /* background: url('../assets/web_dp.jpg') no-repeat center center fixed;  */
-    /* background-size: 100% 100%;  */
-    /* margin-left: 0px; */
-    /* padding-left: 0px; */
-    /* object-fit: fill; */
     z-index: -1;       
     
 }
 .bg_img>img{
-    /* left: 17%; */
     width: 100%;
     height: 100vh;
     object-fit: fill;
 
 }
-
-  div.content_page>h1,h2{
+div.content_page>div{
+    font-family: monospace;
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+  div.content_page>div>h1,h2{
     font-family: cursive;
-    color: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);
+    
   }
   #animation1{
     margin-top: 20px;
@@ -158,17 +147,20 @@ div.content_page{
     font-style: italic;
     font-family:  Serif;
     font: italic;
-    color: rgb(255, 255, 255);
-    /* background-color: rgb(109, 0, 0); */
-    /* opacity: 0.999999999; */
+    color: rgb(255, 0, 85);
+  
   }
-  div.content_page>button{
-    border-radius: 100%;
+  
+  div.content_page>div>button{
+    border-radius: 90%;
   }
   div.animation2{
-    /* position: fixed; */
-    top: 75%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
     height: 30px;
+    width: 30px;
   }
     
 </style>

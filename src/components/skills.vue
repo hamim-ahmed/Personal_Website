@@ -5,11 +5,11 @@
         </div>
         <div class="skills_info">
             <div class="p_skill">
-                <div class="skill_title"><span>Programming Skills</span></div>
+                <div class="skill_title">Programming Skills</div>
                 <div class="list">
                     <div class="s_name"><span>C (basic Programming)</span><span>90%</span></div>
                     <div class="slide"><input type="range" class="slider" min="0" max="100" value="90" ></div>
-                    <div class="s_name"><span>Python (programming,backend)</span><span>70%</span></div>
+                    <div class="s_name"><span>Python (programming, backend)</span><span>70%</span></div>
                     <div class="slide"><input type="range" class="slider" min="0" max="100" value="70"></div>
                     <div class="s_name"><span>Java (basic), PHP (backend)</span><span>70%</span></div>
                     <div class="slide"><input type="range" class="slider" min="0" max="100" value="70"></div>
@@ -59,10 +59,10 @@ div.content_page{
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     align-items: center;
-    /* justify-content: center; */
+    
   }
   div.bg{
     color: rgb(148, 148, 148);
@@ -70,7 +70,7 @@ div.content_page{
     font-size: 100px;
     font-weight: bold;
     position: sticky;
-    left: 17%;          /* 17% left side is occupied by nav bar*/
+    /* left: 17%;           */
     top: 50%;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -97,8 +97,7 @@ div.p_skill{
     flex-direction: column;
     align-items: center;
     width: 50%;
-    margin-left: 50px;
-    margin-right: 30px;
+    margin-right: 10px;
     font-weight: bolder;
 }
 
@@ -107,22 +106,16 @@ div.f_skill{
     flex-direction: column;
     align-items: center;
     width: 50%;
-    margin-right: 50px;
-    margin-left: 30px;
     font-weight: bolder;
 }
 div.skill_title{
-    /* padding-bottom: 20px; */
+    padding-bottom: 15px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(0, 197, 105);
-}
-.skill_title>span{
-    /* background-color: rgb(0, 173, 253); */
+    margin-bottom: 10px;
     font-family: cursive;
     font-weight: bold;
-    /* border-radius: 10px; */
-    padding: 2px;
     border-bottom: dashed 2px rgb(146, 146, 146);
 }
 div.list>.s_name{
@@ -138,10 +131,12 @@ div.s_name{
 }
 div.list{
     width: 100%;
+   padding: 10px;
 }
-div.slide>.slider{
+div.slide>input{
     width: 100%;
-    margin-bottom: 15px;
+    padding-right: 0;
+    
 }
 
 /* div.slide>input{
@@ -150,6 +145,7 @@ div.slide>.slider{
 div.slide>input[type="range"]::-webkit-slider-runnable-track {
   /* background: rgb(4, 0, 255); 
   border-radius: 10px; */
+  padding: 0px;
 
     
 }

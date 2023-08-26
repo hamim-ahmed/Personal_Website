@@ -12,18 +12,18 @@
                 <form class="contact_form">
                     
                     <div class="msg">
-                        <h3>Leave A Message</h3>
+                        <h3>Personal info</h3>
                         <div class="personal_info">
                             <div>
-                                <label for="name">Name:</label>
+                                <label for="name">Name:</label><br>
                                 <input id='name' class="input" type="text" required>
                             </div>
                             <div>
-                                <label for="mail">Email:</label>
+                                <label for="mail">Email:</label><br>
                                 <input id="mail" type="email"  class="input" required>
                             </div>
                             <div>
-                                <label for="phone" >Phone:</label>
+                                <label for="phone" >Phone:</label><br>
                                 <input id="phone" type="number" class="phn" required>
                             </div>
                             
@@ -33,7 +33,7 @@
                         <div class="msg_box">
                             <label for="sub">Subject:</label>
                             <input id="sub" type="text" class="subject" required>
-                            <label for="msge">Write Your Message:</label>
+                            <label for="msge">Leave Your Message:</label>
                             <textarea id="msge" class="txt" required></textarea>
                         </div>
                         <div>
@@ -68,12 +68,12 @@
 
 div.content_page{
     
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(0, 91, 177);
     opacity: 0.999;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     align-items: center;
     
@@ -116,16 +116,14 @@ div.msg{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-    width: 600px;
+    padding: 5px;
+    margin-bottom: 50px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+    width: fit-content;
     /* opacity: 0.8; */
-    /* width: 70%; */
+  
     
 
 }
@@ -134,16 +132,18 @@ div.msg>h3{
     padding: 5px;
     font-family: serif;
     border-radius: 5px;
+    text-align: center;
 }
 div.personal_info{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 div.personal_info> div>input{
-    width: 160px;
+    width: 200px;
     height: 30px;
     margin: 10px;
     margin-top: 0px;
@@ -161,11 +161,12 @@ div.msg_box{
     flex-direction: column;
     align-items: center;
     font-weight: bolder;
+    width: fit-content;
     /* font-family: cursive; */
     /* font-size: 50px; */
 }
 div.msg_box>input{
-    width: 300px;
+    width: 250px;
     height: 35px;
     margin: 10px;
     margin-top: 2px;
@@ -175,7 +176,7 @@ div.msg_box>input{
 }
 
 div.msg_box>textarea{
-    width: 500px;
+    width: 250px;
     height: 90px;
     margin: 10px;
     margin-top: 2px;
