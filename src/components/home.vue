@@ -7,9 +7,8 @@
             <div>Hi There!</div>
             <div>{{ greet }}</div>
             <div><h1 id="animation1"></h1></div>
-            <div>From Narayanganj,Bangladesh.<br><br><br><br></div>
-            <div><button v-on:click="scrollTo('content_contact')" class="big ui blue button">ReachMe</button></div>
-            <!-- <br> -->
+            <div class="address">From<br> Dhaka,Bangladesh.</div>
+            <div><button v-on:click="scrollTo('content_contact')" class="large ui inverted red button">ReachMe</button></div>
             <div class="animation2">
                 <div id="downarrow" style="display: block;">
                 <span><i class="big angle double down icon"></i></span>
@@ -110,7 +109,7 @@ div.content_page{
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background-color: rgb(125, 136, 160);
+    background-color: rgb(0, 217, 255);
     opacity: 0.7;
   
   }
@@ -135,11 +134,14 @@ div.content_page>div{
     font-weight: bolder;
     text-align: center;
 }
-  div.content_page>div>h1,h2{
+div.content_page>div.address{
+    font-size: 20px;
+}
+  /* div.content_page>div>h1,h2{
     font-family: cursive;
     color: rgb(0, 0, 0);
     
-  }
+  } */
   #animation1{
     margin-top: 20px;
     margin-bottom: 20px;

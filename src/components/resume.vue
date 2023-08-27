@@ -184,25 +184,25 @@ div.edu{
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-right: 5px;
     height: inherit;
     width: 500px;
     color: inherit;
     word-wrap: break-word;
-    /* background-color: rgb(39, 39, 39); */
-    /* opacity: 0.5; */
+    margin-right: 5px;
+    margin-left: 5px;
 }
 div.project_work{
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 5px;
     height: inherit;
     width: 400px;
     color: inherit;
     word-wrap: break-word;
+    margin-right: 5px;
+    margin-left: 5px;
 }
-div.edu_title,div.work_title>h2{
+div.edu_title>h2,div.work_title>h2{
     /* display: inline-block; */
     padding-bottom: 10px;
     padding-top: 10px;
@@ -211,7 +211,7 @@ div.edu_title,div.work_title>h2{
     font-size: 25px;
     font-weight: bolder;
     font-family: cursive;
-    color: rgb(255, 255, 255);
+    color: rgb(38, 0, 255);
     background-color: rgb(27, 27, 27);
     border-radius: 5px;
 }
@@ -220,6 +220,8 @@ div.institute,div.projects{
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
+    /* margin-right: 2px;
+    margin-left: 2px; */
 }
 div.institute>h3{
     font-size: 15px;
@@ -256,13 +258,15 @@ div.projects>.images{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     
 }
 div.projects>.images>img{
     height: 10vh;
-    width: fit-content;
-    max-width: 7vw;
-    margin: 3px;
+    max-width: 19%;          /*20% for max 5 images==100% (1% less for 2px margin*/
+    /* width: fit-content; */
+    /* max-width: 7vw; */
+    margin: 2px;
 }
 div.projects>p{
     font-family: Garamond, serif;

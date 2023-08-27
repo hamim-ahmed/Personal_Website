@@ -24,8 +24,8 @@
             <div class="f_skill">
                 <div class="skill_title"><span>FrameWorks</span></div>
                 <div class="list">
-                    <div class="s_name"><span>Django (Python)</span><span>70%</span></div>
-                    <div class="slide"><input type="range" class="slider" min="0" max="100" value="70"></div>
+                    <div class="s_name"><span>Django (Python)</span><span>80%</span></div>
+                    <div class="slide"><input type="range" class="slider" min="0" max="100" value="80"></div>
                     <div class="s_name"><span>Vue.js (JavaScript)</span><span>90%</span></div>
                     <div class="slide"><input type="range" class="slider" min="0" max="100" value="90"></div>
                     <div class="s_name"><span>Semantic UI (CSS)</span><span>80%</span></div>
@@ -109,39 +109,52 @@ div.f_skill{
     font-weight: bolder;
 }
 div.skill_title{
-    padding-bottom: 15px;
+    padding-bottom: 7px;
     text-align: center;
-    font-size: 20px;
+    font-size: large;
     color: rgb(0, 197, 105);
     margin-bottom: 10px;
     font-family: cursive;
     font-weight: bold;
-    border-bottom: dashed 2px rgb(146, 146, 146);
-}
-div.list>.s_name{
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 7px;
-}
-
-div.s_name{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    border-bottom: dashed 2px rgb(27, 27, 27);
 }
 div.list{
     width: 100%;
    padding: 10px;
 }
+div.s_name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.list>.s_name{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    padding: 3px;
+    border-radius: 6px;
+    background-color: rgb(80, 240, 192);
+    word-wrap: break-word;
+}
+div.s_name>span{
+    background-color: rgb(80, 240, 192);
+    padding: 2px;
+    border-radius: 6px;
+}
+div.slide{
+    height: 16px;
+    /* background-color: rgb(83, 253, 253); */
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
 div.slide>input{
     width: 100%;
-    padding-right: 0;
+    padding: 0;
+    /* margin-bottom: 15px; */
     
 }
 
-/* div.slide>input{
-    height: 50px;
-} */
+
 div.slide>input[type="range"]::-webkit-slider-runnable-track {
   /* background: rgb(4, 0, 255); 
   border-radius: 10px; */

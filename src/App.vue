@@ -21,7 +21,7 @@
           <div><i class="address book outline icon"></i><br><a v-on:click="scrollTo('content_contact')"> Contact</a></div>
           
         </div>
-        <div id="nav2" class="nav2 top_nav2" style="display: block;">
+        <div id="nav2" class="nav2 top_nav2" >
             <a href="https://www.facebook.com/" target="_blank"><i class="large facebook icon"></i></a>
             <a href="https://github.com/hamim-ahmed" target="_blank"><i class=" large github icon"></i></a>
             <a href="https://www.linkedin.com/in/hamim-ahmed-890045266/" target="_blank"><i class="large linkedin icon"></i></a>
@@ -105,7 +105,7 @@ export default {
       var class_nav2 = document.getElementById("nav2");
       
       
-      if(screen_width<=this.device_max_width){        //when device width is smaller
+      if(screen_width<=this.device_max_width){        //when device width is smaller   //onlt active topbar classes
         console.log("inside small",screen_width); 
         class_main.className = "top_main";
         class_navbar.className = "top_nav-bar";
@@ -118,7 +118,7 @@ export default {
 
          
       }
-      if(screen_width>this.device_max_width){ //when device width is larger
+      if(screen_width>this.device_max_width){ //when device width is larger  //only active sidevar classes
         console.log("inside large:",screen_width);
         console.log(class_navbar);
         class_main.className = "main";

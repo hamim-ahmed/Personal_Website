@@ -23,7 +23,7 @@ div.dp{
   height: fit-content;
   align-items: center;
   justify-content: center;
-  /* margin-bottom: 60px; */
+  margin-top: 15px;
 }
 div.dp>img{
   width: 25vh;
@@ -134,7 +134,9 @@ div.top_nav1>div>a:hover{
   font-size: 4vw;
   
 }
-
+div.nav2{
+  margin-bottom: 10px;
+}
 /* ================================ */
 /* components starts here */
 
