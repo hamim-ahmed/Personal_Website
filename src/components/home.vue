@@ -1,6 +1,6 @@
 <template>
         <div class="bg_img">   
-            <img src="../assets/web_dp3.jpg">
+            <img src="../assets/web_dp1.jpg">
         </div>
         <div id="content_home" class="content_page">
             
@@ -110,7 +110,7 @@ div.content_page{
     height: 100vh;
     width: 100%;
     background-color: rgb(0, 217, 255);
-    opacity: 0.7;
+    opacity: 0.6;
   
   }
   div.bg_img{

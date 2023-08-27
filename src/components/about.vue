@@ -23,6 +23,18 @@
                         in my working hours, being able to work until the job is done. A trustworthy
                         & honest person on whom people can rely. Always seeks personal and professional improvement.
                     </p>
+                    <div class="strength">
+                        <b>Strength Points:</b><br>
+                        <ul style="list-style: circle;">
+                            <li>Creative Problem Solving</li>
+                            <li>Leadership</li>
+                            <li>patient & Self Motivated</li>
+                            <li>Decision making</li>
+                            <li>flexible</li>
+                            <li>Multitasking</li>
+                        </ul>
+
+                    </div>
                 </div>
                 <div class="contact">
                     <p><b>Name:</b><br> Hamim Ahmed Komol</p>
@@ -140,6 +152,12 @@ div.about>P,div.contact>p{
     /* word-break: break-word; */
     word-wrap: break-word;
     width: 100%;
+}
+div.about>p.intro{
+    font-weight: bold;
+}
+div.about>div.strength{
+    font-size: 15px;
 }
 div.contact>p{
     margin-top: 0px;

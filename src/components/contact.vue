@@ -48,10 +48,12 @@
         <div class="footer">
             <div class="my_address">
                 <span>Contact info</span>
-                <h5>Address: Narayanganj, Dhaka, Bangladesh</h5>
-                <h5>Email: hamimahmed.cse@gmail.com</h5>
-                <h5>Phone: 01926862009</h5>
-
+                <h5> Narayanganj, Dhaka, Bangladesh</h5>
+                <h5>hamimahmed.cse@gmail.com</h5>
+                <h5>01926862009</h5>
+            </div>
+            <div class="copyright">
+                <h5>&copy; 2023 Hamim Ahmed. All Rights Reserved.</h5>
             </div>
         </div>
         
@@ -197,6 +199,7 @@ div.footer{
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     color: white;
     align-items: center;
     opacity: 0.7;
@@ -206,6 +209,8 @@ div.footer>.my_address{
     flex-direction: column;
     align-items: center;
     margin: 20px 10px 0px 20px;
+    word-wrap: break-word;
+    text-align: center;
 }
 div.footer>.my_address>span{
     font-family: cursive;
@@ -218,6 +223,14 @@ div.footer>.my_address>span{
 div.footer>.my_address>h5{
     font-family: serif;
     margin-bottom: 10px;
+}
+div.footer>div.copyright{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: end;
+    justify-content: end;
+    margin: 0px 10px 20px 20px;
 }
 
 </style>
