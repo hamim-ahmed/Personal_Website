@@ -14,11 +14,11 @@
         </div>
 
         <div id="nav1" class="nav1 top_nav1">
-          <div><i class="home icon"></i><br><a v-on:click="scrollTo('content_home')"> Home</a></div>
-          <div><i class="info circle icon"></i><br><a v-on:click="scrollTo('content_about')"> About</a></div>
-          <div><i class="briefcase icon"></i><br><a v-on:click="scrollTo('content_resume')"> Resume</a></div>
-          <div><i class="cogs icon"></i><br><a v-on:click="scrollTo('content_skills')"> My_Skills</a></div>
-          <div><i class="address book outline icon"></i><br><a v-on:click="scrollTo('content_contact')"> Contact</a></div>
+          <div><i class="home icon"></i><a v-on:click="scrollTo('content_home')"> Home</a></div>
+          <div><i class="info circle icon"></i><a v-on:click="scrollTo('content_about')"> About</a></div>
+          <div><i class="briefcase icon"></i><a v-on:click="scrollTo('content_resume')"> Resume</a></div>
+          <div><i class="cogs icon"></i><a v-on:click="scrollTo('content_skills')"> My_Skills</a></div>
+          <div><i class="address book outline icon"></i><a v-on:click="scrollTo('content_contact')"> Contact</a></div>
           
         </div>
         <div id="nav2" class="nav2 top_nav2" >
@@ -68,7 +68,7 @@ export default {
   data(){
     return{
               isNavbar_visible: false,
-              device_max_width:912,
+              device_max_width:820,               //minimum size to change the nav bar from side to top
               
     }
   },

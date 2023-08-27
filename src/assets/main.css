@@ -78,8 +78,8 @@ div.top_nav-bar{
   position: sticky;
   top: 0px;
   z-index: 2;    /* on top of other two div*/
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(18, 80, 72);
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.7);
 }
 div.top_dp{
@@ -120,11 +120,18 @@ div.top_nav1{
   margin-right: 0px;
 }
 div.top_nav1>div{
+  display: flex;
+  flex-direction: column;
   margin-right: 3vw;
-  color: black;
+  color: rgb(0, 238, 255);
+  align-items: center
 }
 div.top_nav1>div>a{
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
+  margin-top: 5px;
+}
+div.top_nav1>div>i{
   font-size: 3vw;
 }
 
