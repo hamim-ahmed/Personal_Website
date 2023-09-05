@@ -130,7 +130,7 @@ div.content_page>div{
     font-family: monospace;
     font-size: 25px;
     padding: 10px;
-    color: rgb(0, 255, 229);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     text-align: center;
 }

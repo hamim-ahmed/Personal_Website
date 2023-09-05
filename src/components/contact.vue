@@ -1,50 +1,54 @@
 <template>
     
     <div id="content_contact" class="content_page">
-        <!-- <div class="bg">
-            <Span>Contact</Span>
+        <!-- <div class="bg_img">   
+            <img src="../assets/images/web_dp1.jpg">
         </div> -->
-        <div class="page_title">
-            <h2>Contact Me</h2>
-        </div>
-        <div class="info">
+        <div class="content">
+            <div class="page_title">
+                <h2>Contact Me</h2>
             
-                <form class="contact_form">
-                    
-                    <div class="msg">
-                        <h3>Personal info</h3>
-                        <div class="personal_info">
-                            <div>
-                                <label for="name">Name:</label><br>
-                                <input id='name' class="input" type="text" required>
+            </div>
+            <div class="info">
+                
+                    <form class="contact_form">
+                        
+                        <div class="msg">
+                            <h3>Personal info</h3>
+                            <div class="personal_info">
+                                <div>
+                                    <label for="name">Name:</label>
+                                    <input id='name' class="input" type="text" required>
+                                </div>
+                                <div>
+                                    <label for="mail">Email:</label>
+                                    <input id="mail" type="email"  class="input" required>
+                                </div>
+                                <div>
+                                    <label for="phone" >Phone:</label>
+                                    <input id="phone" type="number" class="phn" required>
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            <div class="msg_box">
+                                <label for="sub">Subject:</label>
+                                <input id="sub" type="text" class="subject" required>
+                                <label for="msge">Leave Your Message:</label>
+                                <textarea id="msge" class="txt" required></textarea>
                             </div>
                             <div>
-                                <label for="mail">Email:</label><br>
-                                <input id="mail" type="email"  class="input" required>
+                                <button class="ui inverted green button" type="submit">submit</button>
                             </div>
-                            <div>
-                                <label for="phone" >Phone:</label><br>
-                                <input id="phone" type="number" class="phn" required>
-                            </div>
-                            
-                            
-                            
                         </div>
-                        <div class="msg_box">
-                            <label for="sub">Subject:</label>
-                            <input id="sub" type="text" class="subject" required>
-                            <label for="msge">Leave Your Message:</label>
-                            <textarea id="msge" class="txt" required></textarea>
-                        </div>
-                        <div>
-                            <button class="ui inverted green button" type="submit">submit</button>
-                        </div>
-                    </div>
-                </form>
-            
+                    </form>
+                
 
 
+            </div>
         </div>
+        
         <div class="footer">
             <div class="my_address">
                 <span>Contact info</span>
@@ -78,21 +82,48 @@ div.content_page{
     height: fit-content;
     width: 100%;
     align-items: center;
+    z-index: 1;
+    justify-content: space-between;
     
-    justify-content: space-between
-  }
-  div.bg{
+    }
+  /* div.bg_img{
+    
+    width:100%;
+    height: 100vh;
+    z-index: -1;       
+    
+}
+.bg_img>img{
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+
+} */
+  /* div.bg{
     color: rgb(148, 148, 148);
     text-align: center;
     font-size: 100px;
     font-weight: bold;
     position: sticky;
-    left: 17%;          /* 17% left side is occupied by nav bar*/
+    left: 17%;          
     top: 50%;
     margin-top: 30px;
     margin-bottom: 50px;
-    z-index: -1;        /*make the div background*/
+    z-index: -1;       
     opacity: 0.3;
+} */
+div.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../assets/images/web_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    z-index: -1;
 }
 div.page_title>h2{
     font-family: cursive;
@@ -109,6 +140,7 @@ div.info{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .contact{
     display: flex;
@@ -118,16 +150,16 @@ div.msg{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 50px;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 10px 20px rgba(255, 255, 255,0.5);
     width: fit-content;
-    /* opacity: 0.8; */
-  
-    
-
+    color: white;
+}
+div.msg:hover{
+    box-shadow: 5px 10px 20px rgba(255, 255, 255,0.9);
 }
 div.msg>h3{
     background-color: rgb(255, 102, 0);
@@ -150,13 +182,22 @@ div.personal_info> div>input{
     margin: 10px;
     margin-top: 0px;
     margin-left: 0px;
-    background-color: rgb(243, 243, 243);
+    background-color: rgba(243, 243, 243,0.2);
     border: solid 1px rgb(163, 163, 163);
     border-radius: 5px;
+    color: rgb(4, 217, 255);
 }
-div.personal_info>div>label{
+div.msg>.personal_info>div>label{
     text-align: center;
     font-weight: bolder;
+}
+div.msg>.personal_info>div{
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 div.msg_box{
     display: flex;
@@ -172,9 +213,10 @@ div.msg_box>input{
     height: 35px;
     margin: 10px;
     margin-top: 2px;
-    background-color: rgb(212, 248, 248);
+    background-color: rgba(212, 248, 248,0.2);
     border: solid 1px rgb(155, 155, 155);
     border-radius: 6px;
+    color: rgb(213, 255, 4);
 }
 
 div.msg_box>textarea{
@@ -182,9 +224,10 @@ div.msg_box>textarea{
     height: 90px;
     margin: 10px;
     margin-top: 2px;
-    background-color: rgb(212, 248, 248);
+    background-color: rgba(212, 248, 248,0.2);
     border: solid 1px rgb(153, 153, 153);
     border-radius: 10px;
+    color: rgb(4, 255, 58);
 }
 div.msg_box>label{
     font-family: cursive;
