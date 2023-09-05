@@ -14,11 +14,11 @@
         </div>
 
         <div id="nav1" class="nav1 top_nav1">
-          <div><i class="home icon"></i><a v-on:click="scrollTo('content_home')"> Home</a></div>
-          <div><i class="info circle icon"></i><a v-on:click="scrollTo('content_about')"> About</a></div>
-          <div><i class="briefcase icon"></i><a v-on:click="scrollTo('content_resume')"> Resume</a></div>
-          <div><i class="cogs icon"></i><a v-on:click="scrollTo('content_skills')"> My_Skills</a></div>
-          <div><i class="address book outline icon"></i><a v-on:click="scrollTo('content_contact')"> Contact</a></div>
+          <div><i class="home icon"></i><a id="link1" v-on:click="scrollTo('content_home','link1')"> Home</a></div>
+          <div><i class="info circle icon"></i><a id="link2" v-on:click="scrollTo('content_about','link2')"> About</a></div>
+          <div><i class="briefcase icon"></i><a id="link3" v-on:click="scrollTo('content_resume','link3')"> Resume</a></div>
+          <div><i class="cogs icon"></i><a id="link4" v-on:click="scrollTo('content_skills','link4')"> My_Skills</a></div>
+          <div><i class="address book outline icon"></i><a id="link5" v-on:click="scrollTo('content_contact','link5')"> Contact</a></div>
           
         </div>
         <div id="nav2" class="nav2 top_nav2" >
@@ -85,11 +85,17 @@ export default {
   },
   
   methods: {
-    scrollTo(sectionId) {                 //these sectionId is from components.vue pages.
+    scrollTo(sectionId, linkId) {                 //these sectionId is from components.vue pages.
+      // console.log(linkId);
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
+
+      // const a_link=document.getElementById(linkId);
+      // if(a_link){
+      //   a_link.style.color="white";
+      // }
     },
 
 

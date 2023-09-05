@@ -126,7 +126,7 @@ div.top_nav1>div{
   color: rgb(0, 238, 255);
   align-items: center
 }
-div.top_nav1>div>a{
+div.top_nav1>div>a:active{
   color: rgb(255, 255, 255);
   font-size: 3vw;
   margin-top: 5px;

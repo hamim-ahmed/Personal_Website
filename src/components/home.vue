@@ -1,6 +1,6 @@
 <template>
         <div class="bg_img">   
-            <img src="../assets/web_dp1.jpg">
+            <img src="../assets/images/web_dp1.jpg">
         </div>
         <div id="content_home" class="content_page">
             
@@ -8,10 +8,10 @@
             <div>{{ greet }}</div>
             <div><h1 id="animation1"></h1></div>
             <div class="address">From<br> Dhaka,Bangladesh.</div>
-            <div><button v-on:click="scrollTo('content_contact')" class="large ui inverted red button">ReachMe</button></div>
+            <div><button v-on:click="scrollTo('content_contact')" class="large ui inverted blue button">ReachMe</button></div>
             <div class="animation2">
                 <div id="downarrow" style="display: block;">
-                <span><i class="big angle double down icon"></i></span>
+                <span><i class="large angle double down icon blue"></i></span>
                 </div>
             </div>
             
@@ -109,8 +109,8 @@ div.content_page{
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background-color: rgb(0, 217, 255);
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.4);  /*background opacity 0.2*/
+    opacity: 0.999;   /*div content opacity*/
   
   }
   div.bg_img{
@@ -130,7 +130,7 @@ div.content_page>div{
     font-family: monospace;
     font-size: 25px;
     padding: 10px;
-    color: black;
+    color: rgb(0, 255, 229);
     font-weight: bolder;
     text-align: center;
 }
@@ -149,7 +149,7 @@ div.content_page>div.address{
     font-style: italic;
     font-family:  Serif;
     font: italic;
-    color: rgb(255, 0, 85);
+    color: rgb(68, 255, 0);
   
   }
   
