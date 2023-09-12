@@ -185,7 +185,8 @@ div.edu{
     flex-direction: column;
     align-items: left;
     height: inherit;
-    width: 500px;
+    max-width: 50%;
+    min-width: 280px;
     color: inherit;
     word-wrap: break-word;
     margin-right: 5px;
@@ -196,7 +197,8 @@ div.project_work{
     flex-direction: column;
     align-items: left;
     height: inherit;
-    width: 400px;
+    max-width: 50%;
+    min-width: 280px;
     color: inherit;
     word-wrap: break-word;
     margin-right: 5px;
@@ -214,6 +216,7 @@ div.edu_title>h2,div.work_title>h2{
     color: rgb(38, 0, 255);
     background-color: rgb(27, 27, 27);
     border-radius: 5px;
+    /* width: inherit; */
 }
 div.institute,div.projects{
     border:dashed 1.5px rgb(194, 194, 194);
