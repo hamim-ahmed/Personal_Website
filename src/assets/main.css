@@ -123,7 +123,7 @@ div.top_nav1>div{
   display: flex;
   flex-direction: column;
   margin-right: 3vw;
-  color: rgb(0, 238, 255);
+  color: rgb(0, 211, 248);
   align-items: center
 }
 div.top_nav1>div>a:active{
@@ -134,7 +134,12 @@ div.top_nav1>div>a:active{
 div.top_nav1>div>i{
   font-size: 3vw;
 }
-
+div.top_nav1>div>a{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 2vw;
+  
+}
 div.top_nav1>div>a:hover{
   color: rgb(0, 38, 255);
   cursor: pointer;

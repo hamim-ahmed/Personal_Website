@@ -140,22 +140,26 @@ div.info{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+
     
 }
-.contact{
+.contact_form{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 div.msg{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 50px;
     box-shadow: 5px 10px 20px rgba(255, 255, 255,0.5);
-    width: fit-content;
+    width: 80%;
     color: white;
 }
 div.msg:hover{
@@ -204,7 +208,7 @@ div.msg_box{
     flex-direction: column;
     align-items: center;
     font-weight: bolder;
-    width: fit-content;
+    width: 100%;
     /* font-family: cursive; */
     /* font-size: 50px; */
 }
@@ -216,11 +220,12 @@ div.msg_box>input{
     background-color: rgba(212, 248, 248,0.2);
     border: solid 1px rgb(155, 155, 155);
     border-radius: 6px;
-    color: rgb(213, 255, 4);
+    color: rgb(255, 255, 255);
 }
 
 div.msg_box>textarea{
-    width: 250px;
+    width: 300px;
+    max-width: 100%;
     height: 90px;
     margin: 10px;
     margin-top: 2px;

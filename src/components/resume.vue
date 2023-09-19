@@ -125,7 +125,33 @@
 </template>
 
 <script>
+export default{
+    data(){
+        return{
+            name: "I'm Hamim Ahmed.",
+            
+        }
+    },
+    mounted(){
+                //these function will call when the DOM is created initially.
+       
+        
+    },
+    methods:{
+        
+      
+        scrollTo(sectionId) {                 //these sectionId is from components.vue pages.
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+    }
 
+
+
+}
 </script>
 
 <style scoped>
@@ -270,6 +296,9 @@ div.projects>.images>img{
     /* width: fit-content; */
     /* max-width: 7vw; */
     margin: 2px;
+}
+.images img:hover {
+    transform: scale(5.2);
 }
 div.projects>p{
     font-family: Garamond, serif;
