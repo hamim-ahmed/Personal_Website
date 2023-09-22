@@ -86,7 +86,7 @@
                     <p><span>Technology used:</span> Django (backend), HTML, Css, JavaScript, Sqlite3 (database)</p>
                     <div class="project_link">
                         <button class="ui mini inverted blue button">
-                            <a href="" > Project Details
+                            <a href="https://drive.google.com/file/d/10ggf5-Mj97FK1lbpnEaeIoHR2tTtgaFJ/view?usp=drive_link" target="_blank" > Project Details
 
                             </a>
                         </button>
@@ -118,7 +118,13 @@
             </div>
             
         </div>
-        <div class="cv"> <button class="ui inverted round white button"><a href="./src/assets/doc/hamim_ahmed_cv.pdf" target="_blank">Download CV <i class="download icon"></i></a></button></div>
+        <div class="cv"> 
+            <button class="ui inverted round white button">
+                <a href="https://drive.google.com/file/d/10ggf5-Mj97FK1lbpnEaeIoHR2tTtgaFJ/view?usp=drive_link" target="_blank">
+                    Download CV <i class="download icon"></i>
+                </a>
+            </button>
+        </div>
     </div>
     
 
@@ -211,8 +217,8 @@ div.edu{
     flex-direction: column;
     align-items: left;
     height: inherit;
-    max-width: 50%;
-    min-width: 280px;
+    max-width: 45%;
+    min-width: 320px;
     color: inherit;
     word-wrap: break-word;
     margin-right: 5px;
@@ -223,8 +229,8 @@ div.project_work{
     flex-direction: column;
     align-items: left;
     height: inherit;
-    max-width: 50%;
-    min-width: 280px;
+    max-width: 45%;
+    min-width: 320px;
     color: inherit;
     word-wrap: break-word;
     margin-right: 5px;
