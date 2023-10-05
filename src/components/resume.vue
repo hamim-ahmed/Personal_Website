@@ -77,6 +77,10 @@
                 </div>
                 <div class="projects">
                     <h3>Django Project :</h3><br>
+                    <div class="images">
+                    <img src="../assets/images/project2/fb_home.JPG">
+                    <img src="../assets/images/project2/fb_profile.JPG">
+                    </div>
                     
                     <p><span style="font-weight: bolder;">Name: </span>Facebook Clone Project.</p>
                     <p><span style="font-weight: bolder;">Objective: </span>

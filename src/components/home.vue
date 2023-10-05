@@ -1,6 +1,6 @@
 <template>
         <div class="bg_img">   
-            <img src="../assets/images/web_dp2.jpg">
+            <img src="../assets/images/web_dp1.jpg">
         </div>
         <div id="content_home" class="content_page">
             
@@ -14,8 +14,14 @@
                 <span><i class="large angle double down icon blue"></i></span>
                 </div>
             </div>
+
+
+            
             
         </div>
+        
+
+          
         
     
     
@@ -108,7 +114,7 @@ div.content_page{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     background-color: rgba(0, 0, 0, 0.4);  /*background opacity 0.2*/
     opacity: 0.999;   /*div content opacity*/
   

@@ -10,7 +10,7 @@ div.nav-bar{
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  width: 400px;
+  width: 250px;
   position: sticky;
   top: 0px;    /*  sticky form the very beginning height */
   background-color: rgb(18, 80, 72);
@@ -23,7 +23,7 @@ div.dp{
   height: fit-content;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
+  margin: 15px;
 }
 div.dp>img{
   width: 25vh;
@@ -155,7 +155,7 @@ div.nav2{
 
 div.content{
   display: flex;
-  flex-grow: 1;    
+  /* flex-grow: 1;     */
   flex-direction: column;
   
 }
