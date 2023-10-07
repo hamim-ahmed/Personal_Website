@@ -78,8 +78,8 @@
                 <div class="projects">
                     <h3>Django Project :</h3><br>
                     <div class="images">
-                    <img src="../assets/images/project2/fb_home.JPG">
-                    <img src="../assets/images/project2/fb_profile.JPG">
+                    <!-- <img src="../assets/images/project2/fb_home.JPG" alt="img1">
+                    <img src="../assets/images/project2/fb_profile.JPG" alt="img2"> -->
                     </div>
                     
                     <p><span style="font-weight: bolder;">Name: </span>Facebook Clone Project.</p>
